@@ -63,25 +63,16 @@ body{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.img, .img2{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    /* margin: 0 5%; */
-    background-image: url('../Imagenes/Rocas.png');
-    border-radius: 50px;
-}
-
 .img2 img{    
     width: auto;
     height: 100px;
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
     /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
 }
 
 .img img{
     width: auto;
-    height: 100%;
+    height: 100%;    
 }
 
 .Box{
@@ -116,8 +107,76 @@ body{
     width: 100%;    
 }
 
-
 .Contenedor h1{
     letter-spacing: 2px;
     text-transform: uppercase;    
+}
+
+ul{
+   /* background-color: red;  */
+   height: 80%;
+   list-style: none;
+}
+
+ul li{
+    /* background-color: green; */
+    position: relative;
+    width: 100%;
+    margin-top: 5%;
+    padding: 2%;
+    border-bottom-right-radius: 10px;
+    border: 2px solid #181818;
+    z-index: 1;
+}
+
+ul li::before{
+    position: absolute;
+    content: '';
+    width: 95%;
+    height: 80%;
+    background-color: #3496db;
+    border-bottom-right-radius: 10px;
+    z-index: -1;
+    opacity: 40%;        
+}
+
+ul li::after{
+    position: absolute;
+    content: '';
+    left: 0%;    
+    top: 0%;
+    width: 100%;
+    height: 10%;
+    background-color: #3496db;    
+    z-index: -2;          
+    opacity: 80%;    
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+    .row2{
+        height: 120%;
+        margin-top: 12%;
+        flex-direction: column;
+        /* background-color: red; */
+    }
+    .row2 h1{
+        font-size: 22px;
+    }
+
+    .row2 .Box{
+        /* background-color: blue; */
+        width: 100%;
+    }
+
+    .Icono{
+        display: flex;        
+        width: 40%;  
+        /* background-color: green;         */
+        margin: 0% auto;    
+    }
+
+    .box1, .box2{        
+        margin: 0% -1.5%;
+        /* background-color: blue; */
+    }
 }
