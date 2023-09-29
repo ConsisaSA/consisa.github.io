@@ -52,6 +52,8 @@ body{
 }
 
 .row{    
+    display: flex;
+    justify-content: center;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
@@ -66,7 +68,7 @@ body{
 .img2 img{    
     width: auto;
     height: 100px;
-    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+    box-shadow: rgba(15, 182, 220, 0.4) 0px 2px, rgba(18, 193, 232, 0.4) 0px 5px;
     /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
 }
 
