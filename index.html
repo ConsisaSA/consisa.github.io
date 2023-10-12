@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>CONSISA</title>
+    <link rel="stylesheet" href="./CONSISA/src/css/Header.css">
     <link rel="stylesheet" href="./CONSISA/src/css/index.css">
     <link rel="icon" type="image/x-icon" href="./CONSISA/src/css/imagenes/consisaIco.ico"> 
 </head>
@@ -13,7 +14,7 @@
 <body>
 
     <div class="header">
-        <img src="./CONSISA/src/css/imagenes/LogoConsisa.png" alt="Logo Consisa">
+        <img src="./CONSISA/src/css/imagenes/LogoConsisa.png" alt="Logo Consisa" id="index">
     </div>
 
     <!--Contenido-->
@@ -39,11 +40,10 @@
                     </p>
                 </div>
                 <div class="box2">
-                    <ul>
-                        <li>LS</li>
-                        <li>BC</li>
-                        <li>Dynamics 365</li>
-                        <li>CRM</li>
+                    <ul>                        
+                        <li id="LS">LS</li>
+                        <li id="BC" >BC</li>
+                        <li id="Dynamics">Dynamics 365</li>                        
                     </ul>
                 </div>
             </div>
@@ -92,7 +92,7 @@
                 </div>
                 <div class="box2">
                     <ul>
-                        <li>Fabrica</li>
+                        <li id="Fabrica">Fabrica</li>
                         <li>Outsourcing</li>
                     </ul>
                 </div>
@@ -131,6 +131,7 @@
             </div>
         </div>
     </div>    
+    <script src="./CONSISA/src/js/Enlaces.js"></script>
 </body>
 
 </html>

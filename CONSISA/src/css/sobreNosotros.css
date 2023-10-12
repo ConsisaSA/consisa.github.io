@@ -1,0 +1,113 @@
+body {
+    font-family: poppins;
+}
+
+.PaginaPrincipal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: -0.5%;
+    margin-top: 3%;
+}
+
+
+.Imagen {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background-image: url(../css/imagenes/About\ us.jpeg);
+    background-position: center;
+}
+
+.Imagen::after {
+    content: '';
+    background-image: linear-gradient(to bottom, #3c64c1, #4b56ab, #514996, #523c80, #50306c);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 65%;
+}
+
+.Imagen p {
+    position: absolute;
+    font-size: 40px;
+    z-index: 1;
+    color: white;
+    font-weight: bold;
+    left: 40%;
+    top: 15%;
+}
+
+.Imagen p:nth-child(2) {
+    font-size: 24px;
+    top: 38%;
+    width: 56%;
+    left: 22%;
+    text-align: center;
+    font-weight: normal;
+}
+
+.Contenido {
+    width: 55%;
+    height: auto;
+    margin: auto;
+    padding: 2%;
+    font-size: 18px;
+}
+
+.Contenedor {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 400px;
+    margin: auto;    
+}
+
+.Contenedor .box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-color: #5B0C8D;
+}
+
+.box svg {
+    fill: white;
+    margin-top: 2%;
+}
+
+.box:nth-child(2) svg:nth-child(1) {
+    fill: #181818;
+}
+
+.box:nth-child(1) p:nth-child(2) {
+    color: white;
+    font-size: 40px;
+    margin: 2% 0%;
+}
+
+.box:nth-child(1) p:nth-child(3) {
+    font-size: 22px;
+    padding: 0% 20px;
+    color: white;
+    text-align: center
+}
+
+
+.box:nth-child(2) p:nth-child(2) {
+    color: #181818;
+    font-size: 40px;
+    margin: 2% 0%;
+}
+
+.box:nth-child(2) p:nth-child(3) {
+    font-size: 22px;
+    padding: 0% 20px;
+    color: #181818;
+    text-align: center;
+}
+
+.Contenedor .box:nth-child(2) {
+    background-color: #A46BEB;
+}

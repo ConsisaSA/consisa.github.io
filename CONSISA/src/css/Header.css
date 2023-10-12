@@ -1,0 +1,114 @@
+:root{
+    --Translate: 460px;
+}
+
+.Animado{
+    transition: all 800ms;
+    opacity: 0;
+}
+
+
+/*HEADER*/
+
+.header{
+    position: fixed;
+    width: 100%;
+    height: 6%;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    background-color: white;
+    margin: -1%;
+    padding: 0.5%;
+    display: flex;
+    flex-direction:row;    
+    z-index: 2;
+    transition: all 800ms;
+    transform: translate(var(--TranslateContent));    
+}
+
+
+.header img{
+    width: auto;
+    height: 100%;    
+    cursor: pointer;
+}
+
+.mostrarArriba{
+    animation: mostrarArriba 1s;
+}
+
+@keyframes mostrarArriba{
+    0%{
+        transform:translateY(60px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
+/* Responsive */
+
+/* #Dispositivo = Smartphones 
+#Resolucion = B/w 230px to 480px */
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+    .Header{
+        height: 200px;
+        margin: -2%;
+        justify-content: center;        
+    }
+    .Logo {
+        width: 80%;
+        height: 30%;
+        justify-content: center;
+        /* background-color: red; */
+    }
+    .Logo svg{
+        width: 16%;
+    }
+    .Logo h1{
+        font-size: 25px;
+        margin-top: 3%;
+    }
+    
+    svg{        
+        width: 10%;
+    }
+    .Busqueda{
+        bottom: 0%;
+        width: 90%;
+        margin-right: 3%;
+    }
+
+    ul{
+        bottom: 0%;
+        margin-bottom: 20%;
+        margin-right: 20%;
+    }
+    .Contenido{
+        margin-top: 50%;
+    }
+}
+
+/* iPads (portrait) 
+#Dispositivo = Tablets, Ipads (vertical) 
+#Resolucion = B/w 768px to 1024px */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .Logo {
+        width: 60%;
+    }
+    
+    svg{        
+        width: 10%;
+    }
+    .Busqueda{
+        width: 40%;
+        margin-right: 3%;
+    }
+
+    ul{
+        margin-top: 5%;
+        margin-right: 8%;
+    }
+    .Contenido{
+        margin-top: 12%;
+    }
+}

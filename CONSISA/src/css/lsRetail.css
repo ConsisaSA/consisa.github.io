@@ -1,0 +1,199 @@
+body {
+    font-family: poppins;
+    color: #252E2F;
+}
+
+.Principal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: -0.5%;
+    margin-top: 1%;
+    /* background-color: red;         */
+}
+
+.Producto {
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+}
+
+.Box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+}
+
+.Box2 {
+    width: 50%;
+    background-color: #5B0C8D;
+}
+
+.minbox {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    height: 50%;
+    /* background-color: green; */
+}
+
+
+.minbox h1 {
+    width: 90%;
+    font-size: 38px;
+    /* background-color: red; */
+}
+
+.LogoProducto {
+    width: 250px;
+    height: 170px;
+    /* background-color: red; */
+}
+
+.minbox p {
+    width: 90%;
+    font-size: 20px;
+    /* background-color: red; */
+}
+
+.minbox:nth-child(2) {
+    flex-direction: row;
+    /* background-color: red;  */
+    width: 90%;
+    margin-top: -2%;
+}
+
+.minbox:nth-child(2) img {
+    width: 50%;
+    height: auto;
+}
+
+.minbox:nth-child(2) img:nth-child(2) {
+    margin-top: 5%;
+}
+
+.Box2 .minbox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 55%;
+}
+
+.Box2 .minbox h2 {
+    width: 90%;
+    height: 10%;
+    color: white;
+    /* background-color: blue; */
+    display: flex;
+    align-self: normal;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.Box2 .minbox ul {
+    width: 90%;
+    margin-top: -1%;
+    /* background-color: red; */
+    position: relative;
+}
+
+.Box2 .minbox li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin-left: 2%;
+    height: 40px;
+    /* padding: 1%; */
+    margin-top: 1%;
+    background-color: white;
+    color: #A46BEB;
+}
+
+.Box2 .minbox li::after {
+    content: '';
+    position: absolute;
+    left: -3.2%;
+    width: 20px;
+    background-color: #A46BEB;
+    height: 100%;
+}
+
+.ContenedorTarjetas {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: blue; */
+    margin-top: -3%;
+}
+
+.tarjet {
+    position: relative;
+    width: 220px;
+    height: 120px;
+    color: #A46BEB;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    margin: 3% auto;
+}
+
+.tarjet::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background-color: #A46BEB;
+    bottom: -15%;
+}
+
+.tarjet p {
+    position: absolute;
+    margin: 2% 0%;
+    padding: 2%;
+    width: 96%;
+    top: 0%;
+    font-size: 18px;
+    /* background-color: #252E2F; */
+
+}
+
+.Casos {
+    margin: 5% auto;
+    width: 90%;
+    /* background-color: red; */
+}
+
+.Casos h2 {
+    margin: 0%;
+}
+
+.ContenedorCasos {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: red; */
+}
+
+.Casos .Caja {
+    width: 360px;
+    height: 380px;
+    /* background-color: red; */
+    text-align: center;
+    margin: auto;
+}
+
+.Caja p:nth-child(1) {
+    font-weight: bold;
+}
+
+.Caja img {
+    height: 50%;
+}

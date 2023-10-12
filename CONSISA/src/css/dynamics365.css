@@ -1,0 +1,135 @@
+body {
+    font-family: poppins;
+}
+
+
+.Principal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: -0.5%;
+    margin-top: 1%;
+}
+
+.Producto {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+}
+
+.Box {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Box:nth-child(2) {
+    width: 55%;
+    /* background-color: blue; */
+}
+
+.Box .minbox {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    margin: 0% auto;
+}
+
+.Box .minbox:nth-child(2) {
+    background-color: #5B0C8D;
+    width: 100%;
+    height: 40%;
+    color: white;
+}
+
+.Box .minbox:nth-child(2) img {
+    width: 60%;
+    margin: 0% auto;
+}
+
+.Box .minbox:nth-child(2) p {
+    width: 80%;
+    margin: 2% auto;
+}
+
+.Box .minbox h1 {
+    color: #252E2F;
+    font-size: 42px;
+    margin: 0%;
+}
+
+.Box .minbox h2 {
+    color: #013797;
+}
+
+.Box .minbox img {
+    width: 100%;
+}
+
+
+.Box:nth-child(2) .minbox {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    margin: 0% auto;
+    color: #252E2F;
+    background-color: white;
+}
+
+.Box:nth-child(2) .minbox:nth-child(2) {
+    flex-direction: row;
+    height: 40%;
+    width: 96%;
+    padding: 2%;
+    font-size: 14px;
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;   */
+}
+
+.Box:nth-child(2) .minbox:nth-child(2) p {
+    margin: 0.5% auto;
+}
+
+.Box:nth-child(2) .minbox img {
+    width: 55%;
+    height: auto;
+    margin: auto;
+}
+
+
+
+.Casos {
+    margin: 5% auto;
+    width: 85%;
+    height: 72%;
+    /* background-color: red; */
+}
+
+.Casos h2 {
+    margin: 0%;
+}
+
+.ContenedorCasos {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.Casos .Caja {
+    width: 300px;
+    height: 450px;
+    padding: 1%;
+    background-color: #5B0C8D;
+    text-align: center;
+    color: white;    
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin: 2% 2%;
+}
+
+.Caja p:nth-child(1) {
+    font-weight: bold;
+}
