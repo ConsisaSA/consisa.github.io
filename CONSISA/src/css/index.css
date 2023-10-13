@@ -89,12 +89,12 @@ body{
     text-transform: uppercase;    
 }
 
-ul{   
+.box2 ul{   
    height: 80%;
    list-style: none;
 }
 
-ul li{        
+.box2 ul li{        
     position: relative;    
     width: 100%;
     margin-top: 5%;
@@ -106,12 +106,12 @@ ul li{
     transition: all 400ms;
 }
 
-ul li:hover{
+.box2 ul li:hover{
     color: white;    
 
 }
 
-ul li::before{
+.box2 ul li::before{
     position: absolute;
     content: '';
     width: 95%;
@@ -122,7 +122,7 @@ ul li::before{
     opacity: 40%;        
 }
 
-ul li::after{
+.box2 ul li::after{
     position: absolute;
     content: '';
     left: 0%;    
@@ -132,6 +132,15 @@ ul li::after{
     background-color: #5B0C8D;    
     z-index: -2;          
     opacity: 80%;    
+}
+
+.Enlaces{
+    position: absolute;
+    right: 30%;
+     width: 50%;
+     height: 100%;
+     /* background-color: red; */
+
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
@@ -161,4 +170,10 @@ ul li::after{
         margin: 0% -1.5%;
         /* background-color: blue; */
     }
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+
+
 }

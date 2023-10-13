@@ -6,7 +6,7 @@ body {
 .Principal {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: auto;
     margin: -0.5%;
     margin-top: 1%;
 }
@@ -29,7 +29,8 @@ body {
 .Box .minbox {
     display: flex;
     flex-direction: column;
-    align-items: center;justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .Box .minbox img {
@@ -55,7 +56,7 @@ body {
 
 .Box:nth-child(2) .minbox {
     width: 30%;
-    color: white;    
+    color: white;
 }
 
 .ContenedorPoligonos {
@@ -115,7 +116,7 @@ body {
 }
 
 .ContenidoBox2 {
-    width: 90%;    
+    width: 90%;
     margin: 0%;
 }
 
@@ -143,7 +144,7 @@ body {
     min-height: 200px;
     background-color: #5B0C8D;
     text-align: center;
-    color: white;    
+    color: white;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
     margin: 2% auto;
@@ -151,4 +152,64 @@ body {
 
 .Caja p:nth-child(1) {
     font-weight: bold;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+
+    .Box {
+        height: 100%;
+        flex-direction: column;
+        margin: 2% 0%;    
+    }
+
+    .Box .minbox {
+        width: 100%;
+        align-items: center;
+        height: 50%;
+    }
+
+    .Box .minbox p {
+        font-size: 15px;
+    }
+
+    .Box .minbox img {
+        width: 100%;
+    }
+
+    .ContenedorPoligonos {
+        flex-direction: column;
+        width: 100%;
+        height: 80%;
+    }
+
+    .Cuadro {
+        width: 180px;
+        height: 180px;
+        margin-top: 20%;
+    }
+
+    .TituloCuadro {
+        font-size: 12px;
+
+    }
+
+    .Contenido {
+        font-size: 10px;
+        bottom: 20%;
+        left: 5%;
+    }
+
+    .Cuadro:nth-child(2) .Contenido {
+        width: 100%;
+        bottom: 15%;
+        left: 10%;
+        text-align: center;
+    }
+    .Box:nth-child(2) .minbox {
+        margin-top: 30%;
+        /* background-color: red; */
+        width: 100%; 
+        height: 40%;   
+        font-size: 15px;
+    }
 }
