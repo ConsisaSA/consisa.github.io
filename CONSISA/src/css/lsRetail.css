@@ -210,7 +210,7 @@ body {
 @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
     .Producto {
         flex-direction: column;
-
+        margin-left: -1.8%;
     }
 
     .Box {

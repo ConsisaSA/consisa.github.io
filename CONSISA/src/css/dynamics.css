@@ -156,6 +156,10 @@ body {
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
 
+    .Producto{
+        margin-left: -1.8%;
+    }
+
     .Box {
         height: 100%;
         flex-direction: column;
@@ -168,11 +172,17 @@ body {
         height: 50%;
     }
 
-    .Box .minbox p {
+    .Box .minbox:nth-child(2) {        
+        width: 95%;
+        margin: auto;
+    }
+
+    .Box .minbox p {        
         font-size: 15px;
     }
 
     .Box .minbox img {
+        margin-top: 5%;
         width: 100%;
     }
 
@@ -206,8 +216,7 @@ body {
         text-align: center;
     }
     .Box:nth-child(2) .minbox {
-        margin-top: 30%;
-        /* background-color: red; */
+        margin-top: 30%;        
         width: 100%; 
         height: 40%;   
         font-size: 15px;
