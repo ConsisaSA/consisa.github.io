@@ -111,3 +111,41 @@ body {
 .Contenedor .box:nth-child(2) {
     background-color: #A46BEB;
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+
+    .PaginaPrincipal{
+        margin-left: -2.2%;
+    }
+
+    .Imagen p{
+        font-size: 25px;
+        left: 23%;        
+        height: 10%;
+    }
+
+    .Imagen p:nth-child(2) {
+        font-size: 15px;
+        left: 22%;
+        top: 30%;        
+        height: 50%;
+    }
+
+    .Contenido{
+        width: 95%;
+        font-size: 15px;        
+    }
+
+    .box svg{
+        width: auto;
+    }
+
+    .Contenedor .box p:nth-child(2){
+        font-size: 20px;        
+        font-weight: bold;
+    }   
+
+    .Contenedor .box p:nth-child(3){
+        font-size: 14px;        
+    }
+}
