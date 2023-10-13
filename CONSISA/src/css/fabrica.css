@@ -1,111 +1,178 @@
-body{
+body {
     font-family: 'Poppins', sans-serif;
     /* background-color: #181818; */
 }
 
 
 /*Contenido*/
-.CajaPrincipal{
+.CajaPrincipal {
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: auto;    
+    height: auto;
     margin: -0.5%;
-    margin-top: 2%;    
+    margin-top: 2%;
 }
 
-.CajaPrincipal h1{
+.CajaPrincipal h1 {
     color: #5B0C8D;
 }
 
-.CajaFabrica{
+.CajaFabrica {
     width: 95%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 1300;        
+    height: 1300;
 }
 
-.tarjeta{
+.tarjeta {
     display: flex;
     flex-direction: row;
-    width: 620px;    
+    width: 620px;
     height: 400px;
-    margin: 2% 2% ;       
+    margin: 2% 2%;
     border-bottom-right-radius: 15px;
-    background-color: white;    
+    background-color: white;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-.labels{
+.labels {
     text-align: center;
     width: 100%;
-    height: 100%;    
+    height: 100%;
 }
 
-p{
+p {
     margin: 0%;
     padding: 0%;
 }
 
-.imagen{
+.imagen {
     width: 50%;
     height: 100%;
 }
 
-.Titulo{
+.Titulo {
     color: black;
     font-size: 25px;
     font-weight: bold;
-    text-transform: uppercase;    
+    text-transform: uppercase;
 }
 
-.Titulo2{    
+.Titulo2 {
     color: black;
     margin-top: 2%;
     font-size: 15px;
 }
 
-img{
+img {
     width: 100%;
-    height: 100%;    
+    height: 100%;
 }
 
-.contenido .caja1, .caja2{
+.contenido .caja1,
+.caja2 {
     width: 100%;
-    height: 40%;    
-    display: flex;    
+    height: 40%;
+    display: flex;
     flex-direction: row;
 }
 
-.caja2{    
+.caja2 {
     height: 60%;
     color: white;
     background-color: #5B0C8D;
 }
 
-.Solucion{
+.Solucion {
     width: 33.33%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;    
-    padding: 0.5%; 
+    align-items: center;
+    padding: 0.5%;
     font-size: 14px;
     text-align: center;
 }
 
-.Solucion:nth-child(2){
+.Solucion:nth-child(2) {
     /* background-color: #A46BEB; */
 }
 
-svg{
+svg {
     fill: white;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+    
+    .CajaPrincipal {
+        margin-left: -2%;        
+    }
+    
+    .CajaPrincipal h1 {
+        margin-top: 15%;        
+        font-size: 22px;
+    }
+
+    .CajaFabrica{        
+        height: auto;
+    }
+
+    .tarjeta:nth-child(1) {
+        margin-top: 0%;   
+    }
+
+    .tarjeta {        
+        height: 550px;
+        margin-top: 20%;
+    }    
+
+    .contenido{
+        height: 85%;        
+    }
+
+    .caja1{
+        width: 100%;
+        height: 5%;        
+    }
+
+    .caja1 img{
+        width: 150px;
+        height: auto;        
+    }
+
+    .caja2{        
+        height: 90%;        
+    }
 
 
+    .Titulo {
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .Titulo2 {
+        color: black;
+        margin-top: 2%;
+        font-size: 11px;
+    }    
+
+    .Solucion p:nth-child(1){
+        min-height: 15%;        
+    }
+
+    .Solucion p:nth-child(3){
+        font-size: 12px;              
+    }
+
+    .Solucion svg{
+        width: 48px;
+        height: 48px;
+        margin-bottom: 5%;
+    }
 }
