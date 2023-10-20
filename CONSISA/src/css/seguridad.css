@@ -20,7 +20,7 @@ body {
 
 .Box {
     width: 40%;
-    height: 100%;
+    height: 100%;    
     display: flex;
     flex-direction: column;
 }
@@ -31,14 +31,13 @@ body {
 
 .Box:nth-child(1) .minbox {
     width: 100%;
-    height: 40%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: white;
-    color: #252E2F;
-    padding: 1%;
+    color: #252E2F;    
 }
 
 .Box .minbox img {
@@ -64,17 +63,15 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 55%;
-    background-color: #510B7E;
+    height: 100%;    
+    background-color: #510B7E;    
 }
 
 .Box:nth-child(2) .minbox {
-    width: 50%;
-    height: 52%;
-    color: white;
-    background-color: #510B7E;
-    padding: 0%;
+    width: 50%;    
+    color: #252E2F;    
     justify-content: start;
+    color: white;
 }
 
 .Box:nth-child(2) .minbox p {
@@ -110,11 +107,10 @@ body {
 }
 
 .Ejemplo {
+    width: 100%;    
+    background-color: white;
     width: 100%;
-    height: 50%;
-    background-color: #510B7E;
-    width: 100%;
-    color: white;
+    color: #252E2F;
     height: 40%;
     display: flex;
     flex-direction: column;
@@ -179,6 +175,11 @@ body {
 
     .Box .minbox p {
         font-size: 15px;
+        margin-left: 10%;        
+    }
+
+    .Box:nth-child(2) .minbox p::after {
+        background-color: white;
     }
 
     .Box .minbox img {
