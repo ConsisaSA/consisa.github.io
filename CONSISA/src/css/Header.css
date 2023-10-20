@@ -71,12 +71,11 @@
 
 /* Responsive */
 
-/* #Dispositivo = Smartphones 
-#Resolucion = B/w 230px to 480px */
+/* #Dispositivo = Smartphones */
 @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
-    .Header{
-        height: 200px;
-        margin: -2%;
+    .header{
+        height: 5%;
+        margin: -3.2%;        
         justify-content: center;        
     }
     .Logo {
@@ -109,30 +108,5 @@
     }
     .Contenido{
         margin-top: 50%;
-    }
-}
-
-/* iPads (portrait) 
-#Dispositivo = Tablets, Ipads (vertical) 
-#Resolucion = B/w 768px to 1024px */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    .Logo {
-        width: 60%;
-    }
-    
-    svg{        
-        width: 10%;
-    }
-    .Busqueda{
-        width: 40%;
-        margin-right: 3%;
-    }
-
-    ul{
-        margin-top: 5%;
-        margin-right: 8%;
-    }
-    .Contenido{
-        margin-top: 12%;
     }
 }

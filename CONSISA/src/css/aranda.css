@@ -37,16 +37,17 @@ body {
     padding: 1%;
 }
 
-.Box .minbox:nth-child(1) {
-    background-color: white;
+.Box .minbox img {
+    height: 30%;
 }
 
-.Box .minbox img {
-    height: 100%;
+.Box .minbox:nth-child(3){
+    background-color: white;
+    color: #252E2F;
 }
 
 .Box .minbox:nth-child(3) img {
-    height: 60%;
+    height: 50%;
 }
 
 .Box .minbox h2 {
@@ -75,10 +76,10 @@ body {
     flex-wrap: wrap;
 }
 
-
 .Box:nth-child(2) .minbox:nth-child(4){
     align-items: center;
-    width: 100%;
+    width: 100%;    
+    margin-top: -2%;
 }
 
 .Box:nth-child(2) .minbox:nth-child(4) p{
@@ -114,9 +115,8 @@ body {
 }
 
 ul{
-    margin-top: -1%;
+    margin-top: -1%;    
 }
-
 
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
@@ -152,7 +152,7 @@ ul{
 
     .Box .minbox img {
         margin-top: 5%;
-        width: 100%;
+        width: 50%;
     }
 
     .Box:nth-child(2) .minbox {        
