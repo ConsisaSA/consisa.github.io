@@ -15,7 +15,7 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
 }
 
 .Box {
@@ -29,9 +29,9 @@ body {
     width: 60%;
 }
 
-.Box .minbox {
+.Box:nth-child(1) .minbox {
     width: 100%;
-    height: 50%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,87 +42,93 @@ body {
 }
 
 .Box .minbox img {
-    height: 80%;
-}
-
-.Box .minbox {
-
-.Box .minbox:nth-child(3){
-    background-color: white;
-    color: #252E2F;
-}
-
-.Box .minbox:nth-child(3) img {
-    height: 50%;
+    margin-top: 5%;
+    height: 100%;
 }
 
 .Box .minbox h2 {
+    width: 80%;
     color: #252E2F;
+    margin: 0%;
 }
 
-.Box .minbox p:nth-child(1){    
+.Box .minbox p {
+    width: 80%;
+}
+
+.Box .minbox p:nth-child(1) {
     font-weight: bold;
 }
 
-.Box:nth-child(2) .minbox {
+.BoxBefenicios {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     height: 55%;
+    background-color: #510B7E;
+}
+
+.Box:nth-child(2) .minbox {
+    width: 50%;
+    height: 52%;
     color: white;
     background-color: #510B7E;
-    justify-content: start;
-    align-items: start;
     padding: 0%;
+    justify-content: start;
 }
 
 .Box:nth-child(2) .minbox p {
     position: relative;
-    margin-left: 5%;
+    margin-left: 3%;
 }
-
-.Box:nth-child(2){    
-    flex-wrap: wrap;
-}
-
-.Box:nth-child(2) .minbox:nth-child(4){
-    align-items: center;
-    width: 100%;    
-    height: 60%;    
-    margin-top: -2%;
-}
-
-.Box:nth-child(2) .minbox:nth-child(4) p{
-    margin-right: 2%;        
-} 
 
 .Box:nth-child(2) .minbox p::after {
     content: '';
-    width: 340px;
-    height: 5px;
-    background-color: white;
     position: absolute;
-    bottom: 30%;
+    background-color: white;
+    width: 50%;
     margin-left: 5%;
-}
-.Box:nth-child(2) .minbox:nth-child(2) p::after {
-    width: 230px;            
-}
-#metas::before{
-    content: '';
-    width: 600px;
     height: 5px;
-    background-color: white;
-    position: absolute;
-    bottom: 30%;    
-    right: 110%;
+    bottom: 40%;
 }
 
-#metas::after{
-    width: 600px;
-    bottom: 30%;
-    margin-left: 10%;
+
+.Box:nth-child(2) .minbox:nth-child(1) p::after {
+    width: 80%;
 }
 
-ul{
-    margin-top: -1%;    
+.Box:nth-child(2) .minbox:nth-child(2) p::after {
+    width: 50%;
+}
+
+.Box:nth-child(2) .minbox:nth-child(3) p::after {
+    width: 90%;
+}
+
+.Box:nth-child(2) .minbox:nth-child(4) p::after {
+    width: 98%;
+}
+
+.Ejemplo {
+    width: 100%;
+    height: 50%;
+    background-color: #510B7E;
+    width: 100%;
+    color: white;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Ejemplo p {
+    width: 80%;
+}
+
+.Ejemplo img {
+    height: 50%;
+    margin-top: 3%;
 }
 
 
@@ -159,32 +165,33 @@ ul{
 
     .Box .minbox img {
         margin-top: 5%;
-        width: 50%;        
+        width: 50%;
     }
 
-    .Box:nth-child(2) .minbox {        
+    .Box:nth-child(2) .minbox {
         width: 100%;
         height: 40%;
-        font-size: 15px;        
+        font-size: 15px;
     }
 
-    .Box:nth-child(2) .minbox p::after {        
-        width: 220px;        
+    .Box:nth-child(2) .minbox p::after {
+        width: 220px;
     }
+
     .Box:nth-child(2) .minbox:nth-child(2) p::after {
-        width: 100px;            
+        width: 100px;
     }
 
     .Box:nth-child(2) .minbox:nth-child(3) p::after {
-        width: 240px;            
+        width: 240px;
     }
 
-    #metas::before{        
-        width: 130px;        
-    }
-    
-    #metas::after{
+    #metas::before {
         width: 130px;
     }
-    
+
+    #metas::after {
+        width: 130px;
+    }
+
 }
