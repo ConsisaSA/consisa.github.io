@@ -1,0 +1,226 @@
+
+body{    
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.principal{
+    position: absolute;    
+    width: 100%;
+    height: auto;    
+    margin: 2% -0.5%;            
+    color: black;
+    transition: all 800ms;
+    transform: translate(var(--TranslateContent));
+}
+
+.Box{
+    width: 100%;
+    height: 600px;    
+}
+
+.Box:nth-child(1) p{
+    width: 80%;
+    margin: auto;    
+}
+
+.Box:nth-child(2){
+    height: 200px;
+}
+
+.Box .minbox{
+    width: 100%;
+    height: 100%;   
+    margin-top: 1%;     
+}
+
+.Box .minbox img{
+    width: 100%;
+}
+
+.Box:nth-child(2) .minbox{
+    width: 100%;  
+    height: 100%;  
+    display: flex;
+    flex-direction: row;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-color: #510B7E;    
+}
+
+.Box:nth-child(2) .minbox .box{
+    width: 40%;
+    height: 100%;        
+    color: white;    
+}
+
+.Box:nth-child(2) .minbox:nth-child(2) .box, .Box:nth-child(2) .minbox:nth-child(4) .box{
+    background-color: white;    
+    color: #252E2F;
+}
+
+.Box:nth-child(2) .minbox .box h2{
+    width: 80%;    
+    margin: 5% auto;
+}
+
+.Box:nth-child(2) .minbox .box p{
+    width: 80%;
+    margin: auto;    
+    font-size: 20px;    
+}
+
+.Box:nth-child(2) .minbox .box:nth-child(2){
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+    justify-content: center;         
+}
+
+.minbox:nth-child(2) .card input, .minbox:nth-child(4) .card input {
+    background-color: white;
+    color: #252E2F;
+    border: 2px solid #252E2F;
+}
+
+
+.card{
+    position: relative;
+    background-color: transparent;
+    width: 200px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    justify-content: center;
+    margin-right: 2%;    
+}
+
+.minbox:nth-child(2) .card, .minbox:nth-child(4) .card{
+    border: 2px solid #252E2F;    
+}
+
+
+.card img{    
+    height: auto;    
+}
+
+.card p{
+    position: relative;
+    width: 10px;
+    text-align: center;    
+    z-index: 2;
+}
+
+
+.card input{
+    position: absolute;
+    bottom: -5%;
+    right: 5%;
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+    color: white;
+    border-radius: 10px;
+    background-color: #510B7E;
+    border: 2px solid white;
+    z-index: 2;
+    transition: all 200ms;
+}
+
+.card input:hover{
+    cursor: pointer;
+    background-color: #A46BEB;
+}
+
+
+.Productos{
+    position: relative;
+    display: flex;
+    width: 100%;            
+    height: auto;
+    margin: 3% 0%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.img2 img{    
+    width: auto;
+    height: 150px;    
+    box-shadow: rgba(15, 182, 220, 0.4) 0px 2px, rgba(18, 193, 232, 0.4) 0px 5px;    
+}
+
+.bntCard {
+  position: relative;
+  overflow: hidden;  
+  color: white;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 18px 18px 17px;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: transparent;  
+  user-select: none;
+  -webkit-user-select: none;
+  border: none;
+  touch-action: manipulation;
+}
+
+.minbox:nth-child(2) .bntCard, .minbox:nth-child(4) .bntCard {
+    color: #252E2F;
+}
+
+.bntCard span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+}
+
+.bntCard span:last-child {
+  color: white;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
+}
+
+.bntCard:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #A46BEB;
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+  z-index: 50;
+}
+
+.bntCard:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(2);
+}
+
+.bntCard:hover span:last-child {
+  transform: translateX(-50%) translateY(-100%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+   
+}
