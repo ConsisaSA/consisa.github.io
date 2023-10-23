@@ -9,6 +9,7 @@ var Seguridad = document.getElementById("Seguridad");
 var Appydinamics = document.getElementById("Appydinamics");
 var Idera = document.getElementById("Idera");
 var Aranda = document.getElementById("Aranda");
+var microfocus = document.getElementById("microfocus");
 
 
 function URLS(Boton, URL) {
@@ -39,3 +40,4 @@ URLS(Seguridad, "./CONSISA/src/html/seguridad.html");
 URLS(Appydinamics, "./CONSISA/src/html/appydinamics.html");
 URLS(Idera, "./CONSISA/src/html/idera.html");
 URLS(Aranda, "./CONSISA/src/html/aranda.html");
+URLS(microfocus, "./CONSISA/src/html/microfocus.html");
