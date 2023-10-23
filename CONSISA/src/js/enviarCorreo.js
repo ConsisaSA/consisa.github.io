@@ -7,8 +7,7 @@ document.getElementById("FormularioCorreo").addEventListener("submit", function 
     const telefono = document.getElementById("telefono").value;
     const Requerimiento = document.getElementById("Requerimiento").value;
 
-    /*
-    // Envía los datos al servidor
+    /*    
     fetch("/Correo, {
         method: "POST",
         body: JSON.stringify({ nombre, email, telefono, Requerimiento})),
