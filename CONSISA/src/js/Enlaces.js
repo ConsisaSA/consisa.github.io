@@ -10,11 +10,23 @@ var Appydinamics = document.getElementById("Appydinamics");
 var Idera = document.getElementById("Idera");
 var Aranda = document.getElementById("Aranda");
 
-function URLS(Boton, URL){
-    Boton.addEventListener("click", () =>{
+
+function URLS(Boton, URL) {
+    Boton.addEventListener("click", () => {
         location.href = URL;
-    });    
+    });
 }
+
+document.getElementById('Servicios').addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const targetId = this.getAttribute('href').substring(1);
+    const targetSection = document.getElementById(targetId);
+
+    if (targetSection) {
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+});
 
 URLS(LS, "./CONSISA/src/html/lsRetail.html");
 URLS(BC, "./CONSISA/src/html/dynamics-FO.html");

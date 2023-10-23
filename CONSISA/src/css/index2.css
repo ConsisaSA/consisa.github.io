@@ -48,6 +48,15 @@ body{
     top: 0%;    
 }
 
+.BoxMid .minbox:nth-child(2) img{
+    position: absolute;
+    left: 20%; 
+    top: 25%;     
+    width: auto;
+    height: 60%;
+    border-radius: 15px;     
+}
+
 #A37{
     color: #F7D000;
     font-size: 96px;
@@ -78,7 +87,7 @@ body{
 .BoxMid .minbox:nth-child(2){
     align-items: center;    
     justify-content: center;
-    background-color: #510B7E;
+    /* background-color: #510B7E; */
 }
 
 .Box:nth-child(1){

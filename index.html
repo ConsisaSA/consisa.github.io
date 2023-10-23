@@ -19,8 +19,8 @@
         <img src="./CONSISA/src/css/imagenes/LogoConsisa.png" alt="Logo Consisa" id="index">
         <div class="Enlaces">
             <ul>
-                <li><a href="../../../index.html">Inicio</a></li>
-                <li><a href="#Seccion2" id="Servicios">Servicios</a></li>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="#Servicio" id="Servicios">Servicios</a></li>
                 <li><a href="./CONSISA/src/html/sobreNosotros.html">Nosotros</a></li>
                 <li><a href="#Contactenos">Contactenos</a></li>
             </ul>
@@ -48,11 +48,11 @@
                     prácticas de la industria. Estamos listos para aplicar esta experiencia a tu negocio.</p>
             </div>
             <div class="minbox">
-
+                <img src="./CONSISA/src/css/imagenes/About us.jpeg" alt="">
             </div>
         </div>
 
-        <div class="Box" id="Seccion2">
+        <div class="Box" id="Servicio">
             <div class="minbox Animado">
                 <div class="box">
                     <h2>Soluciones de negocio</h2>
@@ -149,11 +149,11 @@
                 <p>Para más información escribenos</p>
                 <p>Un ejecutivo se estará contactando contigo a la brevedad posible.</p>
 
-                <form action="" method="post">
-                    <input type="text" placeholder="Nombre" required="true">
-                    <input type="number" inputmode="numeric" required="true" placeholder="Telefono">
-                    <input type="text" placeholder="Correo" inputmode="email" required="true">
-                    <textarea name="" id="" placeholder="Requerimiento" required="true" cols="30" rows="10"></textarea>
+                <form action="" method="post" id="FormularioCorreo">
+                    <input type="text" id="nombre" placeholder="Nombre" required="true">
+                    <input type="number" id="telefono" inputmode="numeric" required="true" placeholder="Telefono">
+                    <input type="text" id="email" placeholder="Correo" inputmode="email" required="true">
+                    <textarea name="" id="Requerimiento" placeholder="Requerimiento" required="true" cols="30" rows="10"></textarea>
                     <button style="background-color: #510B7E; position: absolute; right: 0%;
                     bottom: -20%; width: 200px; margin-top: 2%;" class="bntCard"
                         role="button" id="Enviar"><span class="text">Enviar</span><span>Enviar Correo</span></button>
@@ -174,6 +174,7 @@
     </div>
     <script src="./CONSISA/src/js/Enlaces.js"></script>
     <script src="./CONSISA/src/js/Header.js"></script>
+    <script src="./CONSISA/src/js/enviarCorreo.js"></script>
 </body>
 
 </html>
