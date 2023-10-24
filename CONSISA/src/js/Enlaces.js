@@ -10,6 +10,7 @@ var Appydinamics = document.getElementById("Appydinamics");
 var Idera = document.getElementById("Idera");
 var Aranda = document.getElementById("Aranda");
 var microfocus = document.getElementById("microfocus");
+var Educonnet = document.getElementById("Educonnet");
 
 
 function URLS(Boton, URL) {
@@ -41,3 +42,4 @@ URLS(Appydinamics, "./CONSISA/src/html/appydinamics.html");
 URLS(Idera, "./CONSISA/src/html/idera.html");
 URLS(Aranda, "./CONSISA/src/html/aranda.html");
 URLS(microfocus, "./CONSISA/src/html/microfocus.html");
+URLS(Educonnet, "./CONSISA/src/html/educonnet.html");

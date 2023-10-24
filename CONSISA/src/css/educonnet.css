@@ -1,0 +1,266 @@
+body {
+    font-family: poppins;
+}
+
+
+.Principal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: -0.5%;
+    margin-top: 1%;
+}
+
+.Producto {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.Box {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #510B7E;
+}
+
+.Box:nth-child(2) {
+    width: 60%;
+    height: 100%;
+}
+
+.Box .minbox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 1%;
+}
+
+.Box .minbox img {
+    margin-top: 5%;
+    height: 15%;
+}
+
+.Box .minbox h2 {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    letter-spacing: 1.5px;
+}
+
+.Box .minbox p {
+    position: relative;
+    width: 65%;
+    font-size: 20px;
+    margin-top: 1.5%;
+}
+
+.Box .minbox:nth-child(1) p::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -10%;
+    left: 0%;
+    background-color: white;
+}
+
+.Box .minbox:nth-child(1) p::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    left: 0%;
+    bottom: -10%;
+    background-color: white;
+}
+
+.Box .minbox p:nth-child(1) {
+    font-weight: bold;
+}
+
+.Box:nth-child(2) img {
+    margin-top: 5%;    
+}
+
+
+.Box2 {
+    width: 100%;
+    height: 680px;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.Box2 .minbox:nth-child(1) {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Box2 .minbox:nth-child(1) img{
+    width: 65%;    
+}
+
+.Box2 .minbox:nth-child(1) p{
+    font-size: 17px;
+    width: 80%;
+}
+
+.Box2 .minbox:nth-child(2) {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    background-color: #510B7E;
+}
+
+.Box2 .minbox:nth-child(2) img {
+    width: 30%;
+    height: auto;
+    border-radius: 15px;
+    margin: auto;
+}
+
+.Lbox {
+    text-align: center;
+    width: 25%;
+    color: white;    
+}
+
+.Lbox p{
+    margin-top: 50%;
+}
+
+.Box3 {
+    width: 100%;
+    height: 680px;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;    
+}
+
+.Box3 .minbox{
+    width: 50%;
+    background-color: #510B7E;
+}
+
+.Box3 .minbox:nth-child(2){
+    width: 40%;
+    background-color: white;
+}
+
+.Box3 .minbox:nth-child(1) img{
+    width: 30%;
+    height: auto;
+    border-radius: 15px;
+    margin: auto;
+}
+
+.Box3 .minbox:nth-child(2) img{
+    width: 40%;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+
+    .Principal {
+        height: auto;
+        margin-left: -2.3%;
+    }
+
+    .Producto {
+        margin-left: -1.8%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .Box {
+        width: 100%;
+        height: 50%;
+        flex-direction: column;
+        margin: 2% 0%;
+    }
+
+    .Box .minbox p {
+        width: 80%;
+    }
+
+    h2 {
+        width: 100%;
+        font-size: 15px;
+        margin-left: -55%;
+    }
+
+    .Box .minbox {
+        width: 100%;
+        align-items: center;
+        height: 50%;
+    }
+
+    .Box:nth-child(2) {
+        width: 100%;
+    }
+
+    .Box .minbox:nth-child(2) {
+        width: 100%;
+        margin: auto;
+    }
+
+    .Box .minbox p {
+        font-size: 15px;
+        margin-left: 10%;
+    }
+
+    .Box:nth-child(2) .minbox p::after {
+        background-color: #252E2F;
+    }
+
+    .Box .minbox img {
+        margin-top: 5%;
+        width: 80%;
+    }
+
+    .Box:nth-child(2) .minbox {
+        width: 100%;
+        height: 40%;
+        font-size: 15px;
+    }
+
+    .BoxBefenicios {
+        width: 100%;
+    }
+
+    .Ejemplo {
+        width: 100%;
+        height: 20%;
+    }
+
+    .Ejemplo img {
+        width: 50%;
+    }
+
+    .Box:nth-child(2) .minbox:nth-child(1) p::after {
+        width: 70%;
+    }
+
+    .Box:nth-child(2) .minbox:nth-child(2) p::after {
+        width: 35%;
+    }
+
+    .Box:nth-child(2) .minbox:nth-child(3) p::after {
+        width: 83%;
+    }
+
+    .Box:nth-child(2) .minbox:nth-child(4) p::after {
+        width: 95%;
+    }
+}

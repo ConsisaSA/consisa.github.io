@@ -18,5 +18,5 @@ window.addEventListener('scroll', mostrarScroll);
 
 
 Inicio.addEventListener("click", () => {
-    window.location.href = "../../../index.html";
+    window.location.href = "https://consisasa.github.io/consisa.github.io/";
 });
