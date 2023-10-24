@@ -408,6 +408,14 @@ form .bntCard {
         width: 95%;
     }
 
+    #Servicio .minbox:nth-child(1){        
+        height: 480px;
+    }
+
+    #Servicio .minbox:nth-child(1) .box:nth-child(2) .card{
+        margin: 2% auto;
+    }
+
     .Box .minbox {
         flex-direction: column;
     }
