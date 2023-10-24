@@ -1,5 +1,8 @@
 :root{
-    --Translate: 460px;
+    /* --Translate: 460px; */
+    --TranslateMenu: -200px;
+    --TranslateContent: 0%;
+    --Rotate: 00deg;
 }
 
 .Animado{
@@ -79,9 +82,13 @@
     }
 }
 
-/* Responsive */
+.header svg{
+    position: absolute;
+    display: none;
+    transition: all 400ms;
+    transform: rotate(var(--Rotate));
+}
 
-/* #Dispositivo = Smartphones */
 @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
     .header{
         height: 5%;
@@ -91,8 +98,7 @@
     .Logo {
         width: 80%;
         height: 30%;
-        justify-content: center;
-        /* background-color: red; */
+        justify-content: center;        
     }
     .Logo svg{
         width: 16%;
@@ -118,5 +124,30 @@
     }
     .Contenido{
         margin-top: 50%;
+    }
+    .header svg{
+        display: block;
+        
+        left: 1%;
+        top: 5%;
+    }
+
+    .header svg:hover{
+        fill: #A46BEB;
+        cursor: pointer;
+    }
+    
+    .header ul{    
+        position: absolute;
+        left: 0%;
+        top: 62%;
+        height: 150px;
+        background-color: white;
+        flex-direction: column;
+        transform: translateY(var(--TranslateMenu));        
+    }
+
+    .header li{    
+        width: 200px;                
     }
 }

@@ -131,8 +131,8 @@ svg {
     }
 
     .tarjeta {        
-        height: 550px;
-        margin-top: 20%;
+        height: 160px;
+        margin-top: 5%;
     }    
 
     .contenido{
@@ -156,7 +156,7 @@ svg {
 
     .Titulo {
         color: black;
-        font-size: 18px;
+        font-size: 15px;
         font-weight: bold;
         text-transform: uppercase;
     }
@@ -164,7 +164,7 @@ svg {
     .Titulo2 {
         color: black;
         margin-top: 2%;
-        font-size: 11px;
+        font-size: 12px;
     }    
 
     .Solucion p:nth-child(1){
