@@ -261,9 +261,9 @@ body {
     box-shadow: rgba(15, 182, 220, 0.4) 0px 2px, rgba(18, 193, 232, 0.4) 0px 5px;
 }
 
-.img2 img:nth-child(3){
+.img2 img:nth-child(3) {
     height: 60px;
-} 
+}
 
 .bntCard {
     position: relative;
@@ -412,11 +412,11 @@ form .bntCard {
         width: 95%;
     }
 
-    #Servicio .minbox:nth-child(1){        
+    #Servicio .minbox:nth-child(1) {
         height: 480px;
     }
 
-    #Servicio .minbox:nth-child(1) .box:nth-child(2) .card{
+    #Servicio .minbox:nth-child(1) .box:nth-child(2) .card {
         margin: 2% auto;
     }
 
@@ -470,7 +470,7 @@ form .bntCard {
         width: 95%;
     }
 
-    .Contactenos{        
+    .Contactenos {
         height: 500px;
     }
 
@@ -498,15 +498,23 @@ form .bntCard {
         margin-top: 2%;
     }
 
-    .Productos{        
+    .Productos {
         margin: 0%;
         width: 100%;
         margin: auto;
         flex-wrap: wrap;
     }
-    .Productos img{        
-        width: 48%;
+
+    .Productos img {
+        width: 30%;
         height: auto;
-        margin: auto;        
+        margin: auto;
+    }
+
+    .img2 img {
+        margin: auto;
+    }
+    .img2 img:nth-child(3) {
+        height: 35px;
     }
 }
