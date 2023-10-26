@@ -41,7 +41,7 @@ body {
     width: 50%;
 }
 
-.BoxMid .minbox img {
+.BoxMid .minbox:nth-child(1) img {
     position: absolute;
     right: 0%;
     width: 150px;
@@ -49,12 +49,14 @@ body {
 }
 
 .BoxMid .minbox:nth-child(2) img {
-    position: absolute;
-    left: 20%;
-    top: 25%;
-    width: auto;
-    height: 60%;
+    width: 25%;
+    height: auto;    
     border-radius: 15px;
+}
+
+.Pt3{
+    width: 90%;
+    height: 80%;
 }
 
 #A37 {
@@ -85,9 +87,10 @@ body {
     top: -6%;
 }
 
-.BoxMid .minbox:nth-child(2) {
-    align-items: center;
-    justify-content: center;
+.BoxMid .minbox:nth-child(2) {    
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F6F6F6;
 }
 
 .Box:nth-child(1) {
@@ -384,7 +387,6 @@ form .bntCard {
     width: 200px;
     margin-top: 2%;
 }
-
 
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
