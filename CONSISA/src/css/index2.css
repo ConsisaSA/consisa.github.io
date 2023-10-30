@@ -18,18 +18,111 @@ body{
     transform: translate(var(--TranslateContent));
 }
 
-.Box{
+
+/*Seccion 2*/
+.Box, .BoxMid{
     width: 100%;
-    height: 600px;    
+    height: 500px;   
+}
+
+.BoxMid{
+    display: flex;
+    flex-direction: row;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-top: 1%;
+}
+
+.BoxMid .minbox{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.BoxMid .minbox img{
+    position: absolute;
+    right: 0%;
+    width: 150px;
+    top: 0%;    
+}
+
+#A37{
+    color: #F7D000;
+    font-size: 96px;
+}
+
+
+.TextoSec2{    
+    position: relative;
+    width: 80%;
+    margin: 1.5%;
+    font-size: 20px;
+}
+
+.TextoSec2::after, .TextoSec2::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #F7D000;
+    bottom: -6%;
+    left: 0%;    
+}
+
+.TextoSec2::before{
+    top: -6%;
+}
+
+.BoxMid .minbox:nth-child(2){
+    align-items: center;    
+    justify-content: center;
+    background-color: #510B7E;
+}
+
+.Box:nth-child(1){
+    position: relative;
+    width: 100%;    
+    height: 700px;
+    margin: auto;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-image: url(../css/imagenes/Fondo\ Consisa.jpg);
+    background-size: cover;
 }
 
 .Box:nth-child(1) p{
-    width: 80%;
-    margin: auto;    
+    position: relative;
+    color: white;
+    z-index: 1;    
+    font-size: 25px;
 }
 
-.Box:nth-child(2){
-    height: 200px;
+#Consisa{    
+    color: #A46BEB;
+    font-size: 35px;    
+}
+
+.Box:nth-child(1)::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #181818;
+    opacity: 70%;
+}
+
+.Box:nth-child(1) .minbox{
+    margin: 2% auto;
+    width: 50%;
+    height: 50%;       
+}
+
+.Box:nth-child(3){
+    height: 200px;    
 }
 
 .Box .minbox{
@@ -42,38 +135,38 @@ body{
     width: 100%;
 }
 
-.Box:nth-child(2) .minbox{
+.Box:nth-child(3) .minbox{
     width: 100%;  
     height: 100%;  
     display: flex;
-    flex-direction: row;
+    flex-direction: row;    
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    background-color: #510B7E;    
+    background-color: #510B7E;
 }
 
-.Box:nth-child(2) .minbox .box{
+.Box:nth-child(3) .minbox .box{
     width: 40%;
     height: 100%;        
-    color: white;    
+    color: white;
 }
 
-.Box:nth-child(2) .minbox:nth-child(2) .box, .Box:nth-child(2) .minbox:nth-child(4) .box{
+.Box:nth-child(3) .minbox:nth-child(2) .box, .Box:nth-child(3) .minbox:nth-child(4) .box{
     background-color: white;    
     color: #252E2F;
 }
 
-.Box:nth-child(2) .minbox .box h2{
+.Box:nth-child(3) .minbox .box h2{
     width: 80%;    
     margin: 5% auto;
 }
 
-.Box:nth-child(2) .minbox .box p{
+.Box:nth-child(3) .minbox .box p{
     width: 80%;
     margin: auto;    
     font-size: 20px;    
 }
 
-.Box:nth-child(2) .minbox .box:nth-child(2){
+.Box:nth-child(3) .minbox .box:nth-child(2){
     width: 60%;
     height: 100%;
     display: flex;
@@ -82,7 +175,7 @@ body{
     justify-content: center;         
 }
 
-.minbox:nth-child(2) .card input, .minbox:nth-child(4) .card input {
+.minbox:nth-child(3) .card input, .minbox:nth-child(4) .card input {
     background-color: white;
     color: #252E2F;
     border: 2px solid #252E2F;
@@ -104,7 +197,6 @@ body{
 .minbox:nth-child(2) .card, .minbox:nth-child(4) .card{
     border: 2px solid #252E2F;    
 }
-
 
 .card img{    
     height: auto;    
@@ -138,7 +230,6 @@ body{
     background-color: #A46BEB;
 }
 
-
 .Productos{
     position: relative;
     display: flex;
@@ -148,8 +239,12 @@ body{
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
+.img2 {
+    margin: auto;
+}
+
 .img2 img{    
-    width: auto;
+    width: auto;    
     height: 150px;    
     box-shadow: rgba(15, 182, 220, 0.4) 0px 2px, rgba(18, 193, 232, 0.4) 0px 5px;    
 }
@@ -169,6 +264,7 @@ body{
   -webkit-user-select: none;
   border: none;
   touch-action: manipulation;
+  font-family: "Poppins";
 }
 
 .minbox:nth-child(2) .bntCard, .minbox:nth-child(4) .bntCard {
@@ -178,7 +274,7 @@ body{
 .bntCard span:first-child {
   position: relative;
   transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
-  z-index: 10;
+  z-index: 1;
 }
 
 .bntCard span:last-child {
@@ -187,7 +283,7 @@ body{
   position: absolute;
   bottom: 0;
   transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
-  z-index: 100;
+  z-index: 3;
   opacity: 0;
   top: 50%;
   left: 50%;
@@ -207,7 +303,7 @@ body{
   transform-origin: bottom center;
   transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
   transform: skewY(9.3deg) scaleY(0);
-  z-index: 50;
+  z-index: 1;
 }
 
 .bntCard:hover:after {
@@ -220,6 +316,48 @@ body{
   opacity: 1;
   transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
 }
+
+.Contactenos{
+    width: 100%;
+    height: 650px; 
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+}
+
+.Contactenos p:nth-child(1){
+    margin-top: 5%;
+    font-size: 40px;        
+}
+
+
+.Contactenos p:nth-child(2){
+    font-size: 20px;
+    margin: 0%;
+}
+
+.Contactenos input, textarea{
+    background-color: #D9D9D9;
+    outline: none;
+    border: none;
+    width: 748px;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 2%;    
+}
+
+textarea{
+    height: 100px;
+    resize: none;    
+}
+
+form{
+    position: relative;
+    display: flex;
+    flex-direction: column;    
+}
+
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
    

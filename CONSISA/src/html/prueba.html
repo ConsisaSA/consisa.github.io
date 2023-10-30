@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navegación Entre Secciones</title>
+    <style>
+        /* Estilos CSS (opcional) */
+        section {
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#seccion1">Ir a Sección 1</a>
+    <a href="#seccion2">Ir a Sección 2</a>
+    <a href="#seccion3">Ir a Sección 3</a>
+
+    <section id="seccion1">
+        <h2>Sección 1</h2>
+        <p>Contenido de la Sección 1.</p>
+    </section>
+
+    <section id="seccion2">
+        <h2>Sección 2</h2>
+        <p>Contenido de la Sección 2.</p>
+    </section>
+
+    <section id="seccion3">
+        <h2>Sección 3</h2>
+        <p>Contenido de la Sección 3.</p>
+    </section>
+
+    <script>
+        // JavaScript para desplazamiento suave
+        document.querySelectorAll('a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1); // Eliminar el signo # del href
+                const targetSection = document.getElementById(targetId);
+
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
