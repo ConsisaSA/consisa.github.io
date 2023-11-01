@@ -46,6 +46,7 @@ body {
     right: 0%;
     width: 150px;
     top: 0%;
+    
 }
 
 .BoxMid .minbox:nth-child(2) img {
@@ -401,6 +402,15 @@ form .bntCard {
         flex-direction: column;
     }
 
+    .BoxMid {
+        height: auto;
+    }
+
+    .BoxMid .minbox:nth-child(2){
+        /* background-color: red; */
+        height: 300px;
+    }
+
     .Box:nth-child(1) p {
         width: 100%;
         font-size: 16px;
@@ -428,10 +438,11 @@ form .bntCard {
 
     .BoxMid .minbox {
         width: 100%;
-    }
+    }    
 
-    .BoxMid .minbox img {
-        width: 20%;
+    .BoxMid .minbox:nth-child(1) img{
+        /* background-color: red; */
+        width: 25%;
     }
 
     #A37 {
