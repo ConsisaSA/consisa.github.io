@@ -1,5 +1,6 @@
 const Tipo = document.getElementById("Tipo");
 const chkTipo = document.getElementById("chkTipo");
+const Contactenos2 = document.getElementById("Contactenos2");
 
 chkTipo.addEventListener("change", () =>{
     if(chkTipo.checked == true){
@@ -23,6 +24,10 @@ chkTipo.addEventListener("change", () =>{
         document.querySelector(".C1P1").innerHTML = "Este módulo proporciona una plataforma centralizada para administrar eficazmente los procesos de matrícula, seguimiento de pagos y generación de informes financieros.";
     }
 });
+
+Contactenos2.addEventListener("click", () =>{
+    location.href = "../../../index.html#Contactenos";
+})
 
 
 function Opacidad(OpacidadPor){
