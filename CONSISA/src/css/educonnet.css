@@ -4,7 +4,10 @@ body {
 
 :root{
     --TranslateMovil: -650px;
-    --TranslateWeb: -600px;
+    --TranslateWeb: 0px;
+    --Letras: 100%;
+    --TranslateModulo: -1000px;
+    --TranslateModulo2: 0px;
 }
 
 
@@ -42,9 +45,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
     color: white;
-    padding: 1%;
+    padding: 1%;    
 }
 
 .Box .minbox img {
@@ -170,10 +173,11 @@ body {
 }
 
 .chkCambio {
-    position: absolute;
+    position: fixed;
     right: 2%;
-    top: 5%;
-    --size: 100px;    
+    bottom: 2%;
+    --size: 100px; 
+    z-index: 5;   
 }
 
 .chkCambio p{
@@ -225,31 +229,96 @@ body {
     border-radius: 100px 100px 30px 100px;
 }
 
-.ContenedorImagenes{    
+.ContenedorImagenes{  
+    position: relative;      
+    width: 90%;
     height: 80%;
+    /* background-color: red; */
     margin: auto;    
-    display: flex;    
+    display: flex;        
+    align-items: center;
     overflow-x: hidden;
+    
 }
 
 .ContenedorImagenes img{    
-    height: 70%;
-    margin: auto;
+    position: absolute;    
+    width: auto;        
 }
 
-.web{
+.web{    
+    height: 60%;
     transition: all 800ms;    
     transform: translateX(var(--TranslateWeb));
 }
 
 .movil{    
+    height: 80%;
     transition: all 800ms;
     transform: translateX(var(--TranslateMovil));
 }
 
 
+.C1h2{
+    opacity: var(--Letras);
+}
+
+.C1P1{
+    opacity: var(--Letras);
+}
+
+.Box2 .minbox:nth-child(2) {
+    position: relative;
+    overflow-x: hidden;    
+}
+
+.minboxModulo{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    transition: all 500ms;
+    transform: translate(var(--TranslateModulo));
+}
+
+.minboxModulo:nth-child(1){
+    position: absolute;
+    flex-direction: column;
+    height: 100%;    
+    transform: translate(var(--TranslateModulo2));
+}
+
+.Box2 .minbox:nth-child(2) .minboxModulo:nth-child(1) img {
+    width: 75%;
+    height: auto;
+    border-radius: 15px;
+    margin: auto;    
+}
 
 
+.Box2:nth-child(3) .minbox:nth-child(1) img{
+    margin: 15% auto;
+    width: 30%;        
+}
+
+.Box2:nth-child(3) .minbox:nth-child(1){
+    background-color: #510B7E;
+    color: white;
+}
+
+.Box2:nth-child(3) .minbox:nth-child(2) .minboxModulo:nth-child(2) img {
+    width: 40%;
+    margin-left: 50%;
+}
+
+.Box2:nth-child(4) .minbox:nth-child(1) img{
+    margin-top: 10%;
+    width: 45%;
+}
+
+.Box2:nth-child(4) .minbox:nth-child(2) .minboxModulo:nth-child(2) img {
+    width: 40%;
+    margin-left: 50%;
+}
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
 
@@ -264,84 +333,45 @@ body {
         flex-direction: column;
     }
 
-    .Box {
+    .Box, .Box2{
         width: 100%;
         height: 50%;
         flex-direction: column;
         margin: 2% 0%;
     }
 
+    .Box .minbox img{        
+        height: auto;
+        width: 80px !important;
+    }
+
     .Box .minbox p {
         width: 80%;
+        font-size: 14px;
+        margin: auto;        
     }
 
     h2 {
         width: 100%;
-        font-size: 15px;
-        margin-left: -55%;
+        font-size: 22px !important;        
     }
 
-    .Box .minbox {
-        width: 100%;
+    .Box .minbox, .Box2 .minbox{
+        width: 100% !important;
         align-items: center;
         height: 50%;
     }
 
-    .Box:nth-child(2) {
-        width: 100%;
+    .Box .minbox, .Box2 .minbox p{
+        font-size: 14px !important;
     }
 
-    .Box .minbox:nth-child(2) {
-        width: 100%;
+    .Box .minbox, .Box2 .minbox h2{
         margin: auto;
+        width: 80%;        
     }
 
-    .Box .minbox p {
-        font-size: 15px;
-        margin-left: 10%;
-    }
-
-    .Box:nth-child(2) .minbox p::after {
-        background-color: #252E2F;
-    }
-
-    .Box .minbox img {
-        margin-top: 5%;
-        width: 80%;
-    }
-
-    .Box:nth-child(2) .minbox {
-        width: 100%;
-        height: 40%;
-        font-size: 15px;
-    }
-
-    .BoxBefenicios {
-        width: 100%;
-    }
-
-    .Ejemplo {
-        width: 100%;
-        height: 20%;
-    }
-
-    .Ejemplo img {
-        width: 50%;
-    }
-
-    .Box:nth-child(2) .minbox:nth-child(1) p::after {
-        width: 70%;
-    }
-
-    .Box:nth-child(2) .minbox:nth-child(2) p::after {
-        width: 35%;
-    }
-
-    .Box:nth-child(2) .minbox:nth-child(3) p::after {
-        width: 83%;
-    }
-
-    .Box:nth-child(2) .minbox:nth-child(4) p::after {
-        width: 95%;
+    .Box2:nth-child(2) .minbox:nth-child(2){        
+        height: 300px;
     }
 }
